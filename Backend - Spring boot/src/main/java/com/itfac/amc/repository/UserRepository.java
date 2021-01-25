@@ -7,4 +7,8 @@ import com.itfac.amc.entity.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, String>{
+  
+  UserDto findByUserId(String id);
+	
+	UpdateUserDto getByUserId(String id);
 }
